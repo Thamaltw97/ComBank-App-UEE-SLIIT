@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">ComBankThamal</string>
+    <string name="notification"> There will be an online service interruption between 12.00am - 2.00am</string>
+    <string name="home_page">- Home Page - ComBank Mobile Banking - All Rights Reserved - SLIIT - June_SE_50</string>
+    <string name="contact_us">- Contact Us - ComBank Mobile Banking - All Rights Reserved - SLIIT - June_SE_50</string>
+    <string name="help">- Help - ComBank Mobile Banking - All Rights Reserved - SLIIT - June_SE_50</string>
+
+    <string name="account_details">ACCOUNT DETAILS</string>
+    <string name="account_details_combnk">ACCOUNT DETAILS - COMMERCIAL BANK PLC.                                                           </string>
+    <string name="current_balance">CURRENT BALANCE</string>
+    <string name="available_balance">AVAILABLE BALANCE</string>
+    <string name="epassbook">EPASSBOOK - LIST OF ACCOUNTS</string>
+    <string name="acname">A/C NAME</string>
+    <string name="acno">A/C NO</string>
+    <string name="actype">A/C TYPE</string>
+    <string name="branch">BRANCH</string>
+    <string name="colon">:</string>
+    <string name="Acnumber">******23647902</string>
+    <string name="AcType">SAVINGS ACCOUNT</string>
+    <string name="Branch">KANDY</string>
+    <string name="Accountname">JAYATISSA DGBU</string>
+    <string name="lastupdateon">LAST UPDATE ON   : </string>
+    <string name="edit">EDIT..</string>
+    <string name="accname_hint">ACCOUNT NAME</string>
+    <string name="myaccount">MY ACCOUNT</string>
+    <string name="myaccount2">NEW ACCOUNT</string>
+    <string name="myaccountno">*****2936250</string>
+    <string name="myaccountno2">*****1695497</string>
+    <string name="myaccountbalance">LKR : 2,235.61</string>
+    <string name="myaccountbalance2">LKR : 3,955.12 </string>
+    <string name="defaultaccount">DEFAULT ACCOUNT</string>
+    <string name="savingsaccount">SAVINGS ACCOUNT</string>
+    <string name="currentaccount">CURRENT ACCOUNT</string>
+    <string name="customerDetails">CUSTOMER DETAILS</string>
+
+    <string name="contact">071 8226513</string>
+    <string name="email">dgbujayatissa@gmail.com</string>
+    <string name="address">No:28 Nugegoda</string>
+
+    <string name="_Accountname">NAME</string>
+    <string name="_contact">CONTACT</string>
+    <string name="_email">E-MAIL</string>
+    <string name="_address">ADDRESS</string>
+    <string name="personalDetails">PERSONAL DETAILS</string>
+    <string name="accountsDetailes">ACCOUNTS DETAILS</string>
+
+    <string name="home">HOME</string>
+    <string name="singin">SIGN IN</string>
+    <string name="settings">EPASSBOOK - SETTINGS</string>
+    <string name="location">LOCATE BRANCHES $ ATMS</string>
+    <string name="exchange">EXCHANGE RATES</string>
+    <string name="interest">INTEREST RATES</string>
+    <!--<string name="notification">NOTIFICATION CENTRE</string>-->
+    <!--<string name="help">HELP</string>-->
+    <string name="contactus">CONTACT US</string>
+
+    <string name="done">DONE</string>
+    <string name="back">BACK</string>
+
+    <string name="telpal">TELPAL</string>
+    <string name="electracity">ELECTRICITY</string>
+    <string name="water">WATER</string>
+    <string name="history">HISTORY</string>
+    <string name="school">SCHOOL</string>
+    <string name="insurance">INSURANCE</string>
+    <string name="paytv">PAYTV</string>
+    <string name="bill_payment">BILL PAYMENT AND SETTLEMENT</string>
+    <string name="title_activity_tel_pal">TelPal</string>
+    <string name="MobileConnections">MOBILE CONNECTIONS</string>
+    <string name="airtel">AIRTEL</string>
+    <string name="LANKABELL">LANKABELL</string>
+    <string name="SLT">SLT</string>
+    <string name="ETISALAT">ETISALATE</string>
+    <string name="MOBITEL">MOBITEL</string>
+    <string name="DIALOG">DIALOG</string>
+    <string name="goback">GO BACK</string>
+    <string name="submit">SUBMIT</string>
+
+</resources>

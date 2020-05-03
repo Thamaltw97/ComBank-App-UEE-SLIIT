@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:background="@color/navHeaderColor"
+            android:icon="@drawable/avatar_default"
+            android:title="PROFILE" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:background="@color/navHeaderColor"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="HOME" />
+
+
+    </group>
+
+    <item android:title="Features">
+
+        <menu>
+
+
+            <item
+                android:id="@+id/nav_credit"
+                android:icon="@drawable/ic_creditcard"
+                android:title="COMBANK CREDIT CARD MANAGEMENT" />
+
+            <item
+                android:id="@+id/nav_loans"
+                android:icon="@drawable/ic_loans"
+                android:title="INQUIRIES-INVESTMENT-LOANS" />
+
+            <item
+                android:id="@+id/nav_payment"
+                android:icon="@drawable/ic_payments"
+                android:title="PAYMENTS-SETTLEMENTS" />
+
+            <item
+                android:id="@+id/nav_merchant"
+                android:icon="@drawable/ic_merchant"
+                android:title="MERCHANT PAYMENTS" />
+
+            <item
+                android:id="@+id/nav_fundtransfer"
+                android:icon="@drawable/ic_fundtransfer"
+                android:title="FUND TRANSFER MANAGEMENT" />
+
+            <item
+                android:id="@+id/nav_password"
+                android:icon="@drawable/ic_changepassword"
+                android:title="CHANGE PASSWORD" />
+
+            <item
+                android:id="@+id/nav_locate"
+                android:icon="@drawable/ic_locate"
+                android:title="LOCATE BRANCHES-ATMS" />
+
+            <item
+                android:id="@+id/nav_exchagerates"
+                android:icon="@drawable/ic_exchangerates"
+                android:title="EXCHANGE RATES" />
+
+            <item
+                android:id="@+id/nav_interestrate"
+                android:icon="@drawable/ic_interestrate"
+                android:title="INTEREST RATES" />
+
+            <item
+                android:id="@+id/nav_notification"
+                android:icon="@drawable/ic_notification"
+                android:title="NOTIFICATION CENTRE" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="HELP" />
+
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_contactus"
+                android:title="CONTACT US" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="LOG OUT" />
+
+        </menu>
+
+    </item>
+
+</menu>

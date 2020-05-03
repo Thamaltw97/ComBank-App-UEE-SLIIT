@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerDetails">
+
+
+    <View
+        android:id="@+id/rectangleViewAccDetails3"
+        android:layout_width="382dp"
+        android:layout_height="616dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangleaccountdetails"
+        android:foregroundGravity="clip_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollEditAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView" />
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollEditAccount"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_height="25dp"
+            android:layout_width="match_parent"
+            android:text="@string/personalDetails"></TextView>
+
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorDark"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:layout_width="176dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="35dp"
+                android:text="@string/_Accountname"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="25dp"
+                android:text="@string/Accountname"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="60dp"
+            android:background="@color/colorLight"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintVertical_bias="0.156">
+
+
+            <TextView
+                android:layout_width="176dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="35dp"
+                android:text="@string/_contact"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="25dp"
+                android:text="@string/contact"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="382dp"
+            android:layout_height="60dp"
+            android:background="@color/colorDark"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintVertical_bias="0.264">
+
+
+            <TextView
+                android:layout_width="176dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="35dp"
+                android:text="@string/_email"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="25dp"
+                android:text="@string/email"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="60dp"
+            android:background="@color/colorLight"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintVertical_bias="0.372">
+
+            <TextView
+                android:layout_width="176dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="35dp"
+                android:text="@string/_address"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="60dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="25dp"
+                android:text="@string/address"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_height="25dp"
+            android:layout_width="match_parent"
+            android:text="@string/accountsDetailes"></TextView>
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="382dp"
+            android:layout_height="285dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails2"
+            app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails2"
+            app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails2"
+            app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails2"
+            app:layout_constraintVertical_bias="0.65">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorLight"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:text="@string/myaccount"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="@string/myaccountno"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorDark"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:text="@string/savingsaccount"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:text="@string/myaccountno2"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@color/grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:background="@color/grey"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@color/grey"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintRight_toRightOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+                    app:layout_constraintVertical_bias="0.372">
+
+                    <TextView
+                        android:layout_width="176dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="35dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="196dp"
+                        android:layout_height="60dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/myRectangleViewBottom"
+        android:layout_width="424dp"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/myrectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/scrollEditAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="EPASSBOOK - LIST OF ACCOUNTS - COMMERCIAL BANK PLC.                                                           "
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleViewBottom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="336dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="176dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/iconcombnk"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="412dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/myrectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_shadow"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_dropshadow"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customerDetails"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/myRectangleView"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleView" />
+
+    <ImageView
+        android:id="@+id/backBtneditaccDetails"
+        android:layout_width="51dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_shadow"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.47000003"
+        app:srcCompat="@drawable/backicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

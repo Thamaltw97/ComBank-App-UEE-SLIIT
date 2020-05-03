@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account_selection"
+    tools:layout_editor_absoluteY="25dp"
+    android:id="@+id/epassBook_drawer">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <View
+            android:id="@+id/rectangleViewAccDetails3"
+            android:layout_width="382dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rectangleaccountdetails"
+            android:foregroundGravity="clip_vertical"
+            app:layout_constraintBottom_toTopOf="@+id/scrollEditAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+            app:layout_constraintTop_toTopOf="@+id/myRectangleView"
+            app:layout_constraintVertical_bias="0.95" />
+
+    <View
+        android:id="@+id/myRectangleViewBottom"
+        android:layout_width="424dp"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/myrectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/scrollEditAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="EPASSBOOK - LIST OF ACCOUNTS - COMMERCIAL BANK PLC.                                                           "
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleViewBottom"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+            app:layout_constraintVertical_bias="0.94">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="387dp"
+                    android:layout_height="575dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails2"
+                    app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails2"
+                    app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails2"
+                    app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails2">
+
+
+                    <TableRow android:layout_width="200dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relative1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="147dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorLight"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text="@string/myaccount"
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorLight"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text="@string/myaccountno"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorLight"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text="@string/savingsaccount"
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="211dp"
+                                android:layout_height="147dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="-14dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorLight"
+                                    android:gravity="right"
+                                    android:paddingTop="13dp"
+                                    android:paddingRight="15dp"
+                                    android:text="@string/defaultaccount"
+                                    android:textColor="#0058C5"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorLight"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text=""
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorLight"
+                                    android:gravity="right"
+                                    android:paddingTop="13dp"
+                                    android:paddingRight="15dp"
+                                    android:text="@string/myaccountbalance"
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RelativeLayout
+                            android:id="@+id/relative2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="210dp"
+                                android:layout_height="147dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorDark"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text="@string/myaccount2"
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorDark"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text="@string/myaccountno2"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorDark"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text="@string/currentaccount"
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="211dp"
+                                android:layout_height="147dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="-14dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorDark"
+                                    android:gravity="right"
+                                    android:paddingTop="13dp"
+                                    android:paddingRight="15dp"
+                                    android:text=""
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorDark"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="13dp"
+                                    android:text=""
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+                                <TextView
+                                    android:layout_width="190dp"
+                                    android:layout_height="49dp"
+                                    android:background="@color/colorDark"
+                                    android:gravity="right"
+                                    android:paddingTop="13dp"
+                                    android:paddingRight="15dp"
+                                    android:text="@string/myaccountbalance2"
+                                    android:textColor="#9E000000"
+                                    android:textSize="16sp"></TextView>
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="203dp"
+                                android:layout_height="146dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginEnd="184dp"
+                                android:background="@color/colorLight"
+                                android:gravity="left"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text=""
+                                android:textColor="#9E000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="179dp"
+                                android:layout_height="147dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="203dp"
+                                android:layout_marginTop="-1dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@color/colorLight"
+                                android:gravity="right"
+                                android:paddingTop="15dp"
+                                android:paddingRight="15dp"
+                                android:text=""
+                                android:textSize="16sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="203dp"
+                                android:layout_height="149dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginEnd="184dp"
+                                android:background="@color/colorDark"
+                                android:gravity="left"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text=""
+                                android:textColor="#9E000000"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="179dp"
+                                android:layout_height="150dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="203dp"
+                                android:layout_marginTop="-1dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@color/colorDark"
+                                android:gravity="right"
+                                android:paddingTop="15dp"
+                                android:paddingRight="15dp"
+                                android:text=""
+                                android:textSize="16sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="0dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginEnd="174dp"
+                                android:background="@color/colorLight"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="213dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginEnd="-39dp"
+                                android:background="@color/colorLight"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:text="" />
+
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="336dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="176dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/iconcombnk"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="412dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/myrectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_shadow"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_dropshadow"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <ImageView
+        android:id="@+id/userDetailsIcon"
+        android:layout_width="57dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/searchrectangle"
+        android:gravity="center"
+        android:hint="@string/accname_hint"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/userDetailsIcon"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/epassbook"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/myRectangleView"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleView" />
+
+    <ImageView
+        android:id="@+id/hamBtnImg"
+        android:layout_width="51dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_shadow"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.47000003"
+        app:srcCompat="@drawable/hamicon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>>
+
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_gravity="left"
+            android:id="@+id/epassBookNavDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/homeNav"
+                    android:background="@color/grey"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:orientation="horizontal"
+                    android:layout_height="75dp"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView3"
+                        android:layout_width="58dp"
+                        android:layout_height="53dp"
+                        app:srcCompat="@drawable/homeicon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/home"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signinNav"
+                    android:background="@color/dgrey"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:orientation="horizontal"
+                    android:layout_height="75dp"
+                    android:layout_width="match_parent">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/imageView4"
+                        android:layout_width="58dp"
+                        android:layout_height="53dp"
+                        app:srcCompat="@drawable/profileiconn" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/singin"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/epassBookNav"
+                    android:background="@color/colorLight"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:id="@+id/imageView5"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/accountlist" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/epassbook"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorDark"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/ettings" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/settings"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorLight"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/location"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorDark"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/exchange" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/exchange"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorLight"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/interestrate" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/interest"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorDark"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/notifications" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/notification"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorLight"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/help" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/help"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorDark"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                    <ImageView
+                        android:alpha="0.6"
+                        android:layout_width="38dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/contactus" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:paddingLeft="25dp"
+                        android:text="@string/contactus"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorLight"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="-5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_height="55dp"
+                    android:layout_width="match_parent">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

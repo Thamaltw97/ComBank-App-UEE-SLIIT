@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editAccountDtailsDrawer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <View
+        android:id="@+id/rectangleViewAccDetails3"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangleaccountdetails"
+        android:foregroundGravity="clip_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollEditAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView"
+        app:layout_constraintVertical_bias="0.035" />
+
+
+
+    <View
+        android:id="@+id/myRectangleViewBottom"
+        android:layout_width="424dp"
+        android:layout_height="21dp"
+        android:layout_alignTop="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/myrectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/scrollEditAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="EPASSBOOK - LIST OF ACCOUNTS - COMMERCIAL BANK PLC.                                                           "
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleViewBottom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="336dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
+        app:srcCompat="@drawable/iconcombnk"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="412dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/myrectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_shadow"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignStart="@+id/toolbar"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_dropshadow"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_details"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/myRectangleView"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleView"
+        app:layout_constraintVertical_bias="0.628" />
+
+    <ImageView
+        android:id="@+id/backBtneditaccDetails"
+        android:layout_width="51dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_shadow"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.47000003"
+        app:srcCompat="@drawable/hamicon" />
+
+    <EditText
+        android:id="@+id/accountnamechange"
+        android:background="@drawable/searchrectangle"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="@string/accname_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintTop_toTopOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="5dp"
+        android:text="DEFAULT ACCOUNT"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintTop_toBottomOf="@+id/accountnamechange"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/done"
+        android:background="@drawable/buttoncornerdone"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/back"
+        android:background="@drawable/buttoncornerback"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintEnd_toStartOf="@+id/doneBtn"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="@+id/rectangleViewAccDetails3"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:layout_constraintVertical_bias="0.508" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_gravity="left"
+        android:id="@+id/epassBookNavDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:id="@+id/homeNav"
+                android:background="@color/grey"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_height="75dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/imageView3"
+                    android:layout_width="58dp"
+                    android:layout_height="53dp"
+                    app:srcCompat="@drawable/homeicon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/home"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signinNav"
+                android:background="@color/dgrey"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal"
+                android:layout_height="75dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/imageView4"
+                    android:layout_width="58dp"
+                    android:layout_height="53dp"
+                    app:srcCompat="@drawable/profileiconn" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/singin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorLight"
+                android:id="@+id/epassBookNav"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/accountlist" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/epassbook"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorDark"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/ettings" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/settings"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorLight"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/location" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/location"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorDark"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/exchange" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/exchange"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorLight"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/interestrate" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/interest"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorDark"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/notifications" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/notification"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorLight"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/help" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/help"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorDark"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="35dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:alpha="0.6"
+                    android:layout_width="38dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@drawable/contactus" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="25dp"
+                    android:text="@string/contactus"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorLight"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="16dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/colorDark"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="-5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="16dp"
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

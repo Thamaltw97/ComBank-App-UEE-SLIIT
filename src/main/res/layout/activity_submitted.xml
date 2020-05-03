@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Submitted">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="237dp"
+            android:layout_marginLeft="160dp"
+            android:contentDescription="@string/app_name"
+            android:foregroundGravity="right"
+            android:src="@drawable/combanklogo" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_margin="2dp"-->
+        <!--            android:layout_marginStart="0dp"-->
+        <!--            android:layout_marginLeft="0dp"-->
+        <!--            android:background="@color/colorBlack"-->
+        <!--            android:contentDescription="@string/app_name"-->
+        <!--            android:src="@drawable/menu" />-->
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorash1"
+        >
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_check_circle_black_24dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="PAYMENT SUCCESSFULL"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textColor="@color/colororange" />
+
+        <Button
+            android:id="@+id/mainbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="60dp"
+            android:background="@drawable/rounded"
+            android:text="MAIN MENU"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

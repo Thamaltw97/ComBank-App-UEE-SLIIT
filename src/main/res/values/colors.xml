@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <color name="colorAccent">#60AFFE</color>
+    <color name="navHeaderColor">#E4E7E7</color>
+
+    <color name="colorPrimary">#2BB9FF</color>
+    <color name="colorPrimaryDark">#D2007FE0</color>
+
+    <color name="colorLight">#2202A6FF</color>
+    <color name="colorDark">#570099FF</color>
+    <color name="colorDdark">#740099FF</color>
+    <color name="grey">#7CE0E0E0</color>
+    <color name="dgrey">#95CECECE</color>
+    <color name="ddgrey">#BFCECECE</color>
+    <color name="navBackground">#658397E7</color>
+    <color name="invisible">#008397E7</color>
+
+    <color name="colorIcons">#05EDFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue1">#42C0FB</color>
+    <color name="colorBlue2">#BFEFFF</color>
+    <color name="colorBlue3">#00B2EE</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#FD2626</color>
+    <color name="colorYellow">#E4F04A</color>
+    <color name="colorTitle">#203D9A</color>
+    <color name="colorBlue4">#A8DEEE</color>
+    <color name="colorAsh">#B8CACF</color>
+    <color name="colororange">#FA825A</color>
+    <color name="colorgreen">#72F366</color>
+    <color name="colorash1">#EFE6EB</color>
+    <color name="coloricons">#9F81F7</color>
+
+</resources>
